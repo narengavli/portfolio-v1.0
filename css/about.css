@@ -1,0 +1,50 @@
+/* main body */
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 25px;
+}
+
+/* about me */
+h2 {
+  text-align: center;
+  margin-bottom: 1.5vh;
+}
+
+.txt-rotate {
+  color: #001aff;
+}
+
+.aboutme {
+  word-wrap: break-word;
+  font-size: large;
+  text-align: justify;
+  margin: 1vh 0vw;
+}
+
+.quote {
+  text-align: center;
+}
+
+/* Media Queries */
+@media screen and (max-width: 840px) {
+  .aboutme {
+    font-size: large;
+  }
+
+  .dev_type {
+    font-size: x-large;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .aboutme {
+    font-size: medium;
+  }
+
+  .dev_type {
+    font-size: large;
+  }
+}

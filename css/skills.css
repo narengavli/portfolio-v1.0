@@ -1,0 +1,94 @@
+.skill-bars {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-col {
+    width: 47%;
+}
+
+.progress-bar-container:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.progress-bar-container h2 {
+    color: rgb(238, 238, 238);
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 15px;
+    margin-top: 10px;
+    border: 1px solid #565656;
+    background-color: white;
+}
+
+.percentage {
+    background-color: rgb(25 0 255 / 77%);
+    box-shadow: 0 0 10px rgb(89 53 248);
+    display: block;
+    height: 100%;
+    animation: progress 1500ms ease-in 1;
+}
+
+.shell_script {
+    width: 90%;
+}
+
+.c {
+    width: 80%;
+}
+
+
+.python {
+    width: 70%;
+}
+
+.django {
+    width: 60%;
+}
+
+.blockchain {
+    width: 30%;
+}
+
+.html {
+    width: 85%;
+}
+
+.css {
+    width: 75%;
+}
+
+.javascript {
+    width: 65%;
+}
+
+.dbms {
+    width: 80%;
+}
+
+.php {
+    width: 70%;
+}
+
+@keyframes progress {
+    from {
+        width: 0;
+    }
+}
+
+/* Media Queries */
+@media screen and (max-width: 840px) {
+    .skill-bars {
+        flex-direction: column;
+    }
+
+    .skill-col {
+        padding-top: 50px;
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- title and icon -->
+    <title>NAREN | PORTFOLIO</title>
+    <link rel="icon" type="image/x-icon" href="./img/portfolio.png">
+
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link css files -->
+    <link rel="stylesheet" href="./css/profile.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/skills.css">
+    <link rel="stylesheet" href="./css/certificate.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/project.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- link google fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto+Slab:wght@900&display=swap"
+        rel="stylesheet">
+
+    <!-- link font awesome -->
+    <script src="https://kit.fontawesome.com/91b7a0e05b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- navbar  -->
+    <div class="topnav" id="navbar">
+        <a href="index.html" class="active">HOME</a>
+        <a onclick="aboutPage()">ABOUT</a>
+        <a onclick="skillsPage()">SKILLS</a>
+        <a onclick="workPage()">WORK</a>
+        <a onclick="contactPage()">CONTACT</a>
+        <a href="javascript:void(0);" class="icon" onclick="navBarFunc()">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- main -->
+    <!-- profile -->
+    <div class="profile">
+        <div class="main-col-1">
+            <div>
+                <h1 class="dev_name">Narendra <span class="coler">Gavli</span></h1>
+                <h1 class="dev_type">I'm a
+                    <span class="txt-rotate" data-period="2000"
+                        data-rotate='[ "Developer.", "Coder.", "Designer."]'></span>
+                </h1>
+            </div>
+        </div>
+        <div class="main-col-2">
+            <img src="./img/home_01.png" id="home-img-1">
+        </div>
+    </div>
+
+    <!-- about -->
+    <div class="about main-box" id="about">
+        <h2>ABOUT</h2>
+        <div>
+            <h3 class="dev_type">Hi, I am narendra gavli and I like
+                <span class="txt-rotate" data-period="2000"
+                    data-rotate='[ "developing.", "coding.", "designing.","playing chess."]'></span>
+            </h3>
+        </div>
+        <div class="aboutme">
+            <p style="margin:1vh 0vw ;">
+                I am currently studying at Sardar Vallabhbhai National Institute of Technology Surat in
+                electronics and
+                communication engineering. I am mostly focused on
+                development. I am learning coding not for competitive programming, but to make my daily tasks
+                easier.
+            </p>
+            I believe in :<br>
+            <p class="quote">"<i>Kar dikhao kuch aisa ki,<br>
+                    duniya karna chahe aapke jaisa !</i>"</p>
+        </div>
+    </div>
+
+    <!-- skills -->
+    <div class="skills main-box" id="skills">
+        <h2><i class="fa-solid fa-code"></i> SKILLS</h2>
+
+        <div class="skill-bars">
+            <div class="skill-col">
+                <div class="progress-bar-container">
+                    <h4>SHELL SCRIPT</h4>
+                    <div class="progress-bar">
+                        <span class="percentage shell_script"></span>
+                    </div>
+                </div>
+
+                <div class="progress-bar-container">
+                    <h4>C/C++</h4>
+                    <div class="progress-bar">
+                        <span class="percentage c"></span>
+                    </div>
+                </div>
+
+                <div class="progress-bar-container">
+                    <h4>PYTHON | TKINTER</h4>
+                    <div class="progress-bar">
+                        <span class="percentage python"></span>
+                    </div>
+                </div>
+
+                <div class="progress-bar-container">
+                    <h4>DJANGO</h4>
+                    <div class="progress-bar">
+                        <span class="percentage django"></span>
+                    </div>
+                </div>
+
+                <div class="progress-bar-container">
+                    <h4>BLOCKCHAIN</h4>
+                    <div class="progress-bar">
+                        <span class="percentage blockchain"></span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- web development skills -->
+            <div class="skill-col">
+                <div class="progress-bar-container">
+                    <h4>HTML</h4>
+                    <div class="progress-bar">
+                        <span class="percentage html"></span>
+                    </div>
+                </div>
+
+                <div class="progress-bar-container">
+                    <h4>CSS</h4>
+                    <div class="progress-bar">
+                        <span class="percentage css"></span>
+                    </div>
+                </div>
+
+                <div class="progress-bar-container">
+                    <h4>JAVASCRIPT</h4>
+                    <div class="progress-bar">
+                        <span class="percentage javascript"></span>
+                    </div>
+                </div>
+
+                <div class="progress-bar-container">
+                    <h4>DBMS</h4>
+                    <div class="progress-bar">
+                        <span class="percentage dbms"></span>
+                    </div>
+                </div>
+
+                <div class="progress-bar-container">
+                    <h4>PHP</h4>
+                    <div class="progress-bar">
+                        <span class="percentage php"></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- certificate -->
+    <div class="certificate main-box" id="certificate">
+        <h2>CERTIFICATE</h2>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 | 2</div>
+                <img src="./img/certificate/webdev.jpg" style="width:100%">
+                <div class="text"><b>Web Development Certificate</b></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 | 2</div>
+                <img src="./img/certificate/bash.jpg" style="width:100%">
+                <div class="text"><b>Bash Script Certificate</b></div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </div>
+
+    <!-- project -->
+    <div class="project main-box" id="project">
+        <h2>PROJECT</h2>
+        <section>
+            <div class="swiper mySwiper container">
+                <div class="swiper-wrapper content">
+
+                    <!-- PROJECT 01 -->
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="headProj">
+                                <h3 class="projTitle">PORTFOLIO</h3>
+                            </div>
+                            <div class="bodyProj">
+                                <div class="projImg">
+                                    <img src="./img/projects/portfoli_website.png" class="card_img">
+                                </div>
+                            </div>
+                            <div class="projLink">
+                                <a href="https://narengavli.github.io/portfolio" target="_blank">
+                                    <button class="liveLink projbtn">
+                                        <i class="fa-brands fa-chrome"></i> <span class="btnTitle">LIVE</span>
+                                    </button>
+                                </a>
+                                <a href="https://github.com/narengavli/portfolio" target="_blank">
+                                    <button class="githubLink projbtn">
+                                        <i class="fa-solid fa-file-code"></i> <span class="btnTitle">CODE</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT 02 -->
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="headProj">
+                                <h3 class="projTitle">PG LIFE</h3>
+                            </div>
+                            <div class="bodyProj">
+                                <div class="projImg">
+                                    <img src="./img/projects/PG_LIFE_HOME_PAGE.png" class="card_img">
+                                </div>
+                            </div>
+                            <div class="projLink">
+                                <a href="https://narengavli.github.io/PG-Life" target="_blank">
+                                    <button class="liveLink projbtn">
+                                        <i class="fa-brands fa-chrome"></i> <span class="btnTitle">LIVE</span>
+                                    </button>
+                                </a>
+                                <a href="https://github.com/narengavli/PG-Life" target="_blank">
+                                    <button class="githubLink projbtn">
+                                        <i class="fa-solid fa-file-code"></i> <span class="btnTitle">CODE</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT 03 -->
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="headProj">
+                                <h3 class="projTitle">TO DO LIST</h3>
+                            </div>
+                            <div class="bodyProj">
+                                <div class="projImg">
+                                    <img src="./img/projects/toDoList.png" class="card_img">
+                                </div>
+                            </div>
+                            <div class="projLink">
+                                <a href="https://narengavli.github.io/todo" target="_blank">
+                                    <button class="liveLink projbtn">
+                                        <i class="fa-brands fa-chrome"></i> <span class="btnTitle">LIVE</span>
+                                    </button>
+                                </a>
+                                <a href="https://github.com/narengavli/todo" target="_blank">
+                                    <button class="githubLink projbtn">
+                                        <i class="fa-solid fa-file-code"></i> <span class="btnTitle">CODE</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT 04 -->
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="headProj">
+                                <h3 class="projTitle">WEB SHELL</h3>
+                            </div>
+                            <div class="bodyProj">
+                                <div class="projImg">
+                                    <img src="./img/projects/web_shell.png" class="card_img">
+                                </div>
+                            </div>
+                            <div class="projLink">
+                                <a href="https://github.com/narengavli/web-shell" target="_blank">
+                                    <button class="liveLink projbtn">
+                                        <i class="fa-brands fa-chrome"></i> <span class="btnTitle">LIVE</span>
+                                    </button>
+                                </a>
+                                <a href="https://github.com/narengavli/web-shell" target="_blank">
+                                    <button class="githubLink projbtn">
+                                        <i class="fa-solid fa-file-code"></i> <span class="btnTitle">CODE</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT 05 -->
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="headProj">
+                                <h3 class="projTitle">CALCULATOR</h3>
+                            </div>
+                            <div class="bodyProj">
+                                <div class="projImg">
+                                    <img src="./img/projects/calculator_photo.png" class="card_img">
+                                </div>
+                            </div>
+                            <div class="projLink">
+                                <a href="https://github.com/narengavli/Calculator" target="_blank">
+                                    <button class="liveLink projbtn">
+                                        <i class="fa-brands fa-chrome"></i> <span class="btnTitle">LIVE</span>
+                                    </button>
+                                </a>
+                                <a href="https://github.com/narengavli/Calculator" target="_blank">
+                                    <button class="githubLink projbtn">
+                                        <i class="fa-solid fa-file-code"></i> <span class="btnTitle">CODE</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT 06 -->
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="headProj">
+                                <h3 class="projTitle">GUSSE NUMBER GAME</h3>
+                            </div>
+                            <div class="bodyProj">
+                                <div class="projImg">
+                                    <img src="./img/projects/Gusse_number_game.png" class="card_img">
+                                </div>
+                            </div>
+                            <div class="projLink">
+                                <a href="https://github.com/narengavli/Guess-Number" target="_blank">
+                                    <button class="liveLink projbtn">
+                                        <i class="fa-brands fa-chrome"></i> <span class="btnTitle">LIVE</span>
+                                    </button>
+                                </a>
+                                <a href="https://github.com/narengavli/Guess-Number" target="_blank">
+                                    <button class="githubLink projbtn">
+                                        <i class="fa-solid fa-file-code"></i> <span class="btnTitle">CODE</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </section>
+    </div>
+
+    <!-- contact -->
+    <div class="contact main-box" id="contact">
+        <h2>CONTACT</h2>
+        <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLScgww2k4hhBTJxX3P0f-s_VB5zOE385Wsc7ucFxx3AgeBTxOQ/viewform?embedded=true"
+            frameborder="0">Loading…
+        </iframe>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer-col-1">
+            <span>Copyright 2022 | All Rights Reserved</span>
+        </div>
+        <div class="footer-col-2">
+            <a href="https://github.com/narengavli-svnit-02">
+                <i class="fa-2x fa-brands fa-github social_media"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/narendragavli-svnit/">
+                <i class="fa-2x fa-brands fa-linkedin social_media"></i>
+            </a>
+            <a href="https://www.instagram.com/naren_gavli/">
+                <i class="fa-2x fa-brands fa-instagram social_media"></i>
+            </a>
+            <a href="mailto:narendragavli.avm@gmail.com">
+                <i class="fa-2x fa-solid fa-envelope social_media"></i>
+            </a>
+            <a href="https://twitter.com/naren_gavli">
+                <i class="fa-2x fa-brands fa-square-twitter social_media"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- link js files -->
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/devTypeFun.js"></script>
+    <script type="text/javascript" src="./js/certificate.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-items: center;
+}
+
+.swiper {
+    margin-bottom: 2vh;
+    width: 100%;
+}
+
+.card {
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card .card-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 100;
+}
+
+.swiper-pagination {
+    position: absolute;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    opacity: 0.7;
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    opacity: 1;
+    color: #7d2ae8;
+}
+
+/* extra */
+.headProj {
+    padding: 1vh 3vw;
+    background-color: rgb(211, 211, 211);
+}
+
+.bodyProj {
+    padding: 1vh 0vw;
+}
+
+.card_img {
+    width: 100%;
+}
+
+.projLink {
+    display: flex;
+    justify-content: center;
+    padding: 1vh 3vw;
+    background-color: rgb(211, 211, 211);
+}
+
+.projTitle {
+    text-align: center;
+}
+
+.projbtn {
+    font-size: larger;
+    color: #000000;
+    padding: 0.5vh 1vw;
+    margin: 0vh 1vw;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 600px) {
+    .btnTitle {
+        display: none;
+    }
+}
