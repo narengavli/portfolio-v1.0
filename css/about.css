@@ -16,6 +16,14 @@ h2 {
   color: #001aff;
 }
 
+.aboutDevType {
+  font-size: larger;
+}
+
+#aboutLbr {
+  display: none;
+}
+
 .aboutme {
   word-wrap: break-word;
   font-size: large;
@@ -31,6 +39,10 @@ h2 {
 @media screen and (max-width: 840px) {
   .aboutme {
     font-size: large;
+  }
+
+  #aboutLbr {
+    display: list-item;
   }
 
   .dev_type {
