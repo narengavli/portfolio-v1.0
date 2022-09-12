@@ -72,10 +72,10 @@ section {
 }
 
 .projbtn {
-    font-size: larger;
+    font-size: large;
     color: #000000;
     padding: 0.5vh 1vw;
-    margin: 0vh 1vw;
+    margin: 0vh 0.5vw;
     border-radius: 8px;
 }
 
