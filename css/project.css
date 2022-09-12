@@ -83,4 +83,12 @@ section {
     .btnTitle {
         display: none;
     }
+
+    .hiddenText {
+        display: none;
+    }
+
+    .projTitle {
+        font-size: small;
+    }
 }
