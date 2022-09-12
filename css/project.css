@@ -84,8 +84,10 @@ section {
         display: none;
     }
 
-    .hiddenText {
-        display: none;
+    .projbtn {
+        color: #000000;
+        background-color: transparent;
+        border: none;
     }
 }
 
