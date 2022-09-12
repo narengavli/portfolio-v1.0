@@ -75,14 +75,14 @@
 
 @media screen and (max-width: 600px) {
     .main-box {
-        padding: 2vh 1.5vw;
+        padding: 2vh 2vw;
     }
 }
 
 
 /* contact css */
 iframe {
-    height: 1000px;
+    height: 950px;
     width: 100%;
 }
 
