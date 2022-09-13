@@ -32,10 +32,18 @@ function contactPage() {
 }
 
 // project script
+let grpNum;
+if (window.matchMedia("(max-width: 820px)").matches) {
+    grpNum = 1;
+} else {
+    grpNum = 3;
+}
+
+
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
+    slidesPerView: grpNum,
     spaceBetween: 20,
-    slidesPerGroup: 3,
+    slidesPerGroup: grpNum,
     loop: true,
     loopFillGroupWithBlank: true,
     pagination: {
@@ -47,3 +55,5 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+window.onresize = function () { location.reload(); }
